@@ -26,7 +26,7 @@ function criarCobrinha() {
 
 function drawFood() {
     context.fillStyle = "red";
-    context.fillRect(snake[i].x, snake[i].y, box, box);
+    context.fillRect(food.x, food.y, box, box);
     
 }
 
@@ -51,6 +51,7 @@ function iniciarJogo() {
 
     CriarBG();
     criarCobrinha();
+    drawFood();
 
     let snakeX = snake [0].x;
     let snakeY = snake [0].y;
